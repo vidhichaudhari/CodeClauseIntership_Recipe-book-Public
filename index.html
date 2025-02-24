@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="Recipe Manager Logo" class="logo">
+            <h1>Recipe Manager</h1>
+        </header>
+        <button id="addRecipeBtn" class="btn">Add Recipe</button>
+        <div id="recipeForm" class="hidden">
+            <input type="text" id="title" placeholder="Recipe Title" required>
+            <textarea id="description" placeholder="Description" required></textarea>
+            <input type="text" id="imageUrl" placeholder="Image URL">
+            <textarea id="ingredients" placeholder="Ingredients (comma separated)" required></textarea>
+            <textarea id="instructions" placeholder="Instructions" required></textarea>
+            <button id="saveRecipeBtn" class="btn">Save Recipe</button>
+        </div>
+        <div id="recipeList" class="recipe-grid"></div>
+        <footer>
+            <h2>Popular Recipes</h2>
+            <div class="recipe-grid">
+            <a href="paneer_tikka.html">
+                <div class="recipe">
+                    <img src="panner_tikka.jpg" alt="Paneer Tikka">
+                    <h3>Paneer Tikka</h3>
+                    <p>Delicious grilled paneer marinated in Indian spices.</p>
+                </div>
+            </a>
+            <a href="manchurian.html">
+                <div class="recipe">
+                    <img src="manchurian.jpg" alt="Manchurian">
+                    <h3>Manchurian</h3>
+                    <p>Spicy and tangy Indo-Chinese vegetable Manchurian.</p>
+                </div>
+            </a>
+            <a href="veg_curry.html">
+                <div class="recipe">
+                    <img src="veg_curry.jpg" alt="Veg Curry">
+                    <h3>Veg Curry</h3>
+                    <p>A rich and creamy vegetable curry with Indian spices.</p>
+                </div>
+            </a>
+            <a href="malai_kofta.html">
+                <div class="recipe">
+                    <img src="malai_kofta.jpg" alt="Malai Kofta">
+                    <h3>Malai Kofta</h3>
+                    <p>Soft cottage cheese dumplings in a creamy gravy.</p>
+                </div>
+            </a>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
